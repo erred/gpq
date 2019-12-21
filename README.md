@@ -9,20 +9,20 @@ GoProxyQuery simple cli to query the go {index,proxy,sum} servers
 
 ```bash
 # show index
-gpx index
+gpq index
 # limit index output
-gpx index -limit 10
+gpq index -limit 10
 # limit index age
-gpx index -since 2019-01-01T00:00:00.000Z
+gpq index -since 2019-01-01T00:00:00.000Z
 
 # list the versions of a module
-gpx proxy example.com/module
+gpq proxy example.com/module
 # show the info of a particular version
-gpx proxy example.com/module v0.1.0
+gpq proxy example.com/module v0.1.0
 # download the zip file
-gpx proxy -save example.com/module v0.1.0
+gpq proxy -save example.com/module v0.1.0
 
-gpx sum example.com/module v0.1.0
+gpq sum example.com/module v0.1.0
 ```
 
 ## TODO
